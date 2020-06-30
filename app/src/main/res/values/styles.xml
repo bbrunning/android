@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="MainButtonLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="MainButtonIcon">
+        <item name="android:layout_width">30dp</item>
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:button">@null</item>
+        <item name="android:checked">true</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="MainButtonText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/main_tab_item_text</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="bottom_sheet_dialog" parent="Theme.Design.BottomSheetDialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/transparent</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowContentOverlay">@color/transparent</item>
+        <item name="android:windowEnterAnimation">@anim/in_bottom_to_top_type</item>
+        <item name="android:windowExitAnimation">@anim/out_top_to_bottom_type</item>
+    </style>
+</resources>

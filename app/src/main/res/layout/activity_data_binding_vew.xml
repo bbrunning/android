@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="com.zwt.superandroid.api.TestDatabindingData"/>
+        <variable
+            name="testdatabinding"
+            type="TestDatabindingData" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/purple_color"
+        tools:context=".home.MainActivity">
+        <TextView
+            android:id="@+id/user_view1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="test"/>
+        <TextView
+            android:id="@+id/user_view2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/colorPrimary"
+            android:text="test1"/>
+        <TextView
+            android:id="@+id/user_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="@{testdatabinding.name, default=张三}"/>
+        <TextView
+            android:id="@+id/password_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:text="@{testdatabinding.password, default=121212121212}"/>
+    </LinearLayout>
+</layout>

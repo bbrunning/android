@@ -1,0 +1,49 @@
+apply plugin: "com.android.application"
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.zwt.superandroid"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro"
+        }
+    }
+    //支持Java8
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation "com.android.support:appcompat-v7:28.0.0"
+    implementation "com.android.support:design:28.0.0"
+    implementation "com.android.support:multidex:1.0.3"
+    implementation "com.android.support.constraint:constraint-layout:2.0.0-beta2"
+    implementation "com.android.support:support-v4:28.0.0"
+    testImplementation "junit:junit:4.13-beta-3"
+    androidTestImplementation "com.android.support.test:runner:1.0.2"
+    androidTestImplementation "com.android.support.test.espresso:espresso-core:3.0.2"
+    implementation "com.android.support:appcompat-v7:28.0.0"
+    implementation "com.android.support:recyclerview-v7:28.0.0"
+    //dagger2依赖注入
+    implementation "com.google.dagger:dagger:2.14.1"
+    annotationProcessor "com.google.dagger:dagger-compiler:2.14.1"
+    implementation "com.squareup.okhttp3:okhttp:4.2.1"
+    implementation "com.google.code.gson:gson:2.8.6"
+    api "com.squareup.retrofit2:retrofit:$retrofit_version"
+    api "com.squareup.retrofit2:adapter-rxjava:$retrofit_version"
+    api "com.squareup.retrofit2:converter-gson:$retrofit_version"
+}

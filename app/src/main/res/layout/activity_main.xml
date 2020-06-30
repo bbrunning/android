@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/main_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_layout" />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/main_tab0"
+            style="@style/MainButtonLayout"
+            android:onClick="onTabClick"
+            android:tag="0">
+
+            <RadioButton
+                android:id="@+id/home_btn"
+                style="@style/MainButtonIcon"
+                android:background="@drawable/selector_home"
+                android:onClick="onTabClick"
+                android:tag="0" />
+
+            <TextView
+                android:id="@+id/home_tab_text"
+                style="@style/MainButtonText"
+                android:layout_below="@+id/home_btn"
+                android:gravity="center"
+                android:text="Tab" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_tab1"
+            style="@style/MainButtonLayout"
+            android:onClick="onTabClick"
+            android:tag="1">
+
+            <RadioButton
+                android:id="@+id/btn_discovery"
+                style="@style/MainButtonIcon"
+                android:background="@drawable/selector_home"
+                android:onClick="onTabClick"
+                android:tag="1" />
+
+            <TextView
+                style="@style/MainButtonText"
+                android:layout_below="@+id/btn_discovery"
+                android:text="Tab" />
+
+            <ImageView
+                android:id="@+id/discovery_tips"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignTop="@+id/btn_discovery"
+                android:layout_alignRight="@+id/btn_discovery"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/selector_home"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_tab2"
+            style="@style/MainButtonLayout"
+            android:onClick="onTabClick"
+            android:tag="2">
+
+            <RadioButton
+                android:id="@+id/record_btn"
+                style="@style/MainButtonIcon"
+                android:background="@drawable/selector_home"
+                android:onClick="onTabClick"
+                android:tag="2" />
+
+            <TextView
+                android:id="@+id/tab2_text"
+                style="@style/MainButtonText"
+                android:layout_below="@+id/record_btn"
+                android:text="Tab" />
+
+            <ImageView
+                android:id="@+id/record_tips"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignTop="@+id/record_btn"
+                android:layout_alignRight="@+id/record_btn"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="-10dp"
+                android:background="@drawable/selector_home"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_tab4"
+            style="@style/MainButtonLayout"
+            android:onClick="onTabClick"
+            android:tag="3">
+
+            <RadioButton
+                android:id="@+id/mine_btn"
+                style="@style/MainButtonIcon"
+                android:background="@drawable/selector_home"
+                android:onClick="onTabClick"
+                android:tag="3" />
+
+            <TextView
+                style="@style/MainButtonText"
+                android:layout_below="@+id/mine_btn"
+                android:text="Tab" />
+
+            <ImageView
+                android:id="@+id/mine_tips"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignTop="@+id/mine_btn"
+                android:layout_alignRight="@+id/mine_btn"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="-5dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
