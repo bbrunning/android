@@ -2,6 +2,8 @@ package com.zwt.superandroid.home.fragment;
 
 import android.os.Bundle;
 import android.view.View;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,6 +16,10 @@ public class HomeFragment extends BaseFragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        WebView mTestWeb = (WebView)view.findViewById(R.id.testWeb);
+        WebSettings sSet = mTestWeb.getSettings();
+        sSet.setJavaScriptEnabled(true);
+        mTestWeb.loadUrl("file:///android_asset/test.html");
     }
 
     @Override
