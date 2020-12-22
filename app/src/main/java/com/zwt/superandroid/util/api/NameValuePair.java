@@ -1,8 +1,5 @@
 package com.zwt.superandroid.util.api;
 
-/**
- * Created by john on 2018/11/21.
- */
 public class NameValuePair {
     private String name;
     private String value;

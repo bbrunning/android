@@ -4,8 +4,6 @@ import android.util.Log;
 
 /**
  * log接口类
- *
- * @author guozhiqing
  */
 public final class LogUtil {
     public static boolean mDebug = true;

@@ -13,9 +13,6 @@ import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by john on 2015/4/11.
- */
 public class APIUtils {
     public static final int INVALID_INTEGER_VALUE = -1;
     private static final int DEVICE_TYPE = 2;

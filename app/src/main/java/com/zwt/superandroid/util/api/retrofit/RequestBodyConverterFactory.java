@@ -10,9 +10,6 @@ import okhttp3.RequestBody;
 import retrofit2.Converter;
 import retrofit2.Retrofit;
 
-/**
- * Created by john on 2018/10/17.
- */
 public class RequestBodyConverterFactory extends Converter.Factory {
     public static RequestBodyConverterFactory create() {
         return new RequestBodyConverterFactory();

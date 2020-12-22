@@ -12,8 +12,6 @@ import java.lang.reflect.Field;
 
 /**
  * 显示Toast
- *
- * @author guozhiqing
  */
 public class ToastUtil {
 

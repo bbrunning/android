@@ -10,9 +10,7 @@ import retrofit2.Retrofit;
 import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- * Created by john on 2018/10/16.
- */
+
 public class RetrofitBase<T> {
     public static final String METHOD_POST = "POST";
     public static final String METHOD_GET = "GET";

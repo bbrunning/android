@@ -11,9 +11,6 @@ import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
 
-/**
- * Created by john on 2018/10/18.
- */
 public class SSLUtil {
     private static class TrustAllCerts implements X509TrustManager {
         @Override

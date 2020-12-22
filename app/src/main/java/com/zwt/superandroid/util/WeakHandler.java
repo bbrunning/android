@@ -6,10 +6,6 @@ import android.os.Message;
 
 import java.lang.ref.WeakReference;
 
-/**
- * Created by john on 2016/11/21.
- */
-
 public class WeakHandler extends Handler {
     private WeakReference<Context> mContextReference;
     private MessageListener mListener;
